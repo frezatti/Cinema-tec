@@ -1,6 +1,6 @@
-import NavBar from "../components/navbar";
+import NavBar from "../../../components/navbar";
 
-export default function Filmes() {
+export default function Movies() {
 	return (
 		<>
 			<NavBar />
