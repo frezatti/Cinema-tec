@@ -4,12 +4,11 @@ import AppRoutes from "./routes/routes";
 import NavBar from "./components/navbar";
 
 function App() {
-	return (
-		<>
-			<NavBar />
-			<AppRoutes />
-		</>
-	);
+    return (
+        <>
+            <AppRoutes />
+        </>
+    );
 }
 
 export default App;
