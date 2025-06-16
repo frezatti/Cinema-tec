@@ -11,12 +11,13 @@ function AppRoutes() {
     return (
         <Router>
             <Routes>
-                <Route element={<Layout />} />
-                <Route path="/" element={<HomePage />} />
-                <Route path="/filmes" element={<MoviesPage />} />
-                <Route path="/salas" element={<TheaterPage />} />
-                <Route path="/sessoes" element={<SessionPage />} />
-                <Route path="/ingressos" element={<TicketsPage />} />
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<HomePage />} />
+                    <Route path="filmes" element={<MoviesPage />} />
+                    <Route path="salas" element={<TheaterPage />} />
+                    <Route path="sessoes" element={<SessionPage />} />
+                    <Route path="ingressos" element={<TicketsPage />} />
+                </Route>
             </Routes>
         </Router>
     );
